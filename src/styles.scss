@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  background-color: #f5f5f5;
+  font-family: 'Poppins', sans-serif;
+}
+
+.app-layout {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  min-height: 100vh;
+}
+
+.content {
+  padding: 30px;
+}
+
+.cart-sidebar {
+  background-color: white;
+  border-left: 1px solid #ddd;
+  padding: 30px;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.08);
+}
+
+nav {
+  margin-bottom: 25px;
+
+  a {
+    text-decoration: none;
+    color: #2f4858;
+    font-weight: 600;
+    margin-right: 10px;
+
+    &:hover {
+      color: #ffa500;
+    }
+  }
+}
+
+h1 {
+  color: #2f4858;
+  margin-bottom: 30px;
+}
+
+.pictures-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.picture-card {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  p {
+    font-weight: 600;
+    color: #2f4858;
+  }
+}
+
+input[type='checkbox'] {
+  width: 18px;
+  height: 18px;
+  accent-color: #ffa500;
+}
+
+.cart-sidebar h2 {
+  color: #2f4858;
+}
+
+.cart-sidebar li {
+  margin-bottom: 10px;
+}
+
+.cart-sidebar button {
+  margin-left: 8px;
+  background: #ff5b5b;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 2px 7px;
+
+  &:hover {
+    background: #e14646;
+  }
+}
+
+.delete-button {
+  margin-left: 8px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.clear-cart-button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff5b5b;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #e14646;
+    transform: translateY(-2px);
+  }
+}
